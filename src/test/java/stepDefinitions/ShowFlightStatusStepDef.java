@@ -30,23 +30,7 @@ public class ShowFlightStatusStepDef {
 		
 		blankPage.openFlightStatusPage();
 	}
-	
-//    @And("^User entered city code (.*) in Departure field$")
-//	public void user_enters_city_code_in_departure_field(String departure) {
-//		Log.info("Inside stepFile - ShowFlightStatus >> user_enters_city_code_in_departure_field. Departure = "+departure);
-//		 
-//		 flightStatusPage.setDeparture(departure);
-//		 
-//	}
-//
-//	@And("^User entered city code (.*) in Destination field$")
-//	public void user_enters_city_code_in_destination_field(String destination) {
-//		Log.info("Inside stepFile - ShowFlightStatus >> user_enters_city_code_in_destination_field. destination = "+destination);
-//		
-//		flightStatusPage.setDestination(destination);
-//
-//	}
-    
+
     
 	@And("^User enters (.*) in Departure field$")
 	public void user_enters_in_departure_field(String departure) {

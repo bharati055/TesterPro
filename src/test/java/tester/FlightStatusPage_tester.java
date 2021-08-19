@@ -10,7 +10,7 @@ import CommonUtils.FlightCodeMapping;
 import CommonUtils.Wait;
 import baseUtils.BrowserFactory;
 import baseUtils.Log;
-import pages.FlightStatusPage;
+import pages.*;
 
 public class FlightStatusPage_tester extends FlightStatusPage{
 	BrowserFactory factory  = new BrowserFactory();

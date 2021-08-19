@@ -10,7 +10,7 @@ import io.cucumber.junit.Cucumber;
 				monochrome = true,      
 				plugin = {"pretty", "html:target/HTMLReport.html",
 						"json:target/cucumber.json"},      
-				tags = "@regression"     ) 
+				tags = "@searchFlight"     ) 
 public class TestRunner {
 
 }
