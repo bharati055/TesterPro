@@ -28,6 +28,10 @@ mvn test
 
 **Check run report**
 In the project root directory report is created in the target folder.
+To generate Summary report run below command at the project root
+```
+mvn verity -DskipTests
+```
 
 
 **Project structure detail & description**
