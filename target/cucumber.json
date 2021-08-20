@@ -3,31 +3,30 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-08-20T06:03:50.914Z",
+        "start_timestamp": "2021-08-02T15:59:41.146Z",
         "line": 17,
-        "name": "[TestID-01] User enters departure, destination city code and selects todays date to search for flights",
+        "name": "[TestID-01] User enters departure, destination city code and selects todays date to search for flight status",
         "description": "",
-        "id": "our-website-users-should-be-able-search-flight-to-book;[testid-01]-user-enters-departure--destination-city-code-and-selects-todays-date-to-search-for-flights;;2",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[testid-01]-user-enters-departure--destination-city-code-and-selects-todays-date-to-search-for-flight-status;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 14188296900,
+              "duration": 18260327400,
               "status": "passed"
             },
             "line": 7,
-            "name": "User has launched search flight page",
+            "name": "User has launched flight status page",
             "match": {
-              "location": "stepDefinitions.SearchAndBookFlightStepDef.user_has_launched_search_flight_page()"
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_has_launched_flight_status_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"a-cta__text\"\u003e...\u003c/span\u003e is not clickable at point (183, 625). Other element would receive the click: \u003cdiv class\u003d\"o-flap-module__content o-flap-module__content--opened o-flap-module__content--closed\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d92.0.4515.159)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VIKAS-PC\u0027, ip: \u0027192.168.1.111\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\\Users\\Vikas\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57608}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 6a0740956a5bb895e82631662fcce48d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat tester.FlightStatusPage_tester.setDeparture(FlightStatusPage_tester.java:32)\r\n\tat stepDefinitions.ShowFlightStatusStepDef.user_enters_in_departure_field(ShowFlightStatusStepDef.java:39)\r\n\tat ✽.User enters CGN in Departure field(file:///C:/Users/Vikas/eclipse-workspace/TesterPro/src/test/resources/Features/SearchAndBookFlight.feature:8)\r\n",
-              "duration": 1586737900,
-              "status": "failed"
+              "duration": 1058278900,
+              "status": "passed"
             },
             "line": 8,
             "name": "User enters CGN in Departure field",
@@ -44,7 +43,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3855718600,
+              "status": "passed"
             },
             "line": 9,
             "name": "User enters BER in Destination field",
@@ -61,7 +61,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1315923500,
+              "status": "passed"
             },
             "line": 10,
             "name": "User selects today in Date field",
@@ -78,29 +79,38 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 141905600,
+              "status": "passed"
             },
             "line": 11,
-            "name": "clicks on Search for flight button",
+            "name": "clicks Show flight status button",
             "match": {
-              "location": "stepDefinitions.SearchAndBookFlightStepDef.clicks_on_search_for_flight_button()"
+              "location": "stepDefinitions.ShowFlightStatusStepDef.clicks_show_flight_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 509795300,
+              "status": "passed"
             },
             "line": 12,
-            "name": "user can see the flight searched",
+            "name": "user can see the flight status as on time for the route and date selected",
             "match": {
-              "location": "stepDefinitions.SearchAndBookFlightStepDef.user_can_see_the_flight_searched()"
+              "arguments": [
+                {
+                  "val": "on time",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_can_see_the_flight_status_for_the_route_and_date_selected(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 16040016700,
+              "status": "passed"
             },
             "line": 13,
             "name": "closes browser",
@@ -119,18 +129,475 @@
           },
           {
             "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T16:00:22.973Z",
+        "line": 31,
+        "name": "[TestID-02] User enters Departure, Destination and selects tomorrows date to search for flight status",
+        "description": "",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[testid-02]-user-enters-departure--destination-and-selects-tomorrows-date-to-search-for-flight-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14522731900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User has launched flight status page",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_has_launched_flight_status_page()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@searchFlight"
+            "result": {
+              "duration": 1088859700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters Cologne-Bonn in Departure field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cologne-Bonn",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_departure_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3854562900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User enters Berlin Brandenburg in Destination field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Berlin Brandenburg",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_destination_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1312872200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User selects tomorrow in Date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomorrow",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_selects_success_in_date_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146218400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "clicks Show flight status button",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.clicks_show_flight_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197129700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user can see the flight status as on time for the route and date selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "on time",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_can_see_the_flight_status_for_the_route_and_date_selected(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10080344800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "closes browser",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P2"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T16:00:54.194Z",
+        "line": 45,
+        "name": "[TestID-03] User enters Departure, Destination and selects yesterdays date to search for flight status",
+        "description": "",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[testid-03]-user-enters-departure--destination-and-selects-yesterdays-date-to-search-for-flight-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15120987900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User has launched flight status page",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_has_launched_flight_status_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1023875400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User enters Cologne-Bonn in Departure field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cologne-Bonn",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_departure_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3819829100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enters Berlin Brandenburg in Destination field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Berlin Brandenburg",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_destination_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1761673800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User selects yesterday in Date field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "yesterday",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_selects_success_in_date_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166108500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "clicks Show flight status button",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.clicks_show_flight_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186123500,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user can see the flight status as arrived for the route and date selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arrived",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_can_see_the_flight_status_for_the_route_and_date_selected(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53731309500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "closes browser",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P2"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T16:02:10.018Z",
+        "line": 48,
+        "name": "[TestID-04] User should not be allowed to select date out of allowed range",
+        "description": "",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[testid-04]-user-should-not-be-allowed-to-select-date-out-of-allowed-range",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15374139500,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User has launched flight status page",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_has_launched_flight_status_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1191153900,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "tries to select date out of allowed range",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.tries_to_select_date_out_of_allowed_range()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user is not allowed to select that day",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_is_not_allowed_to_select_that_day()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12726778500,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "closes browser",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P2"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T16:02:39.318Z",
+        "line": 64,
+        "name": "[TestID-05] User should not be allowed to enter same city in Departure, Destination",
+        "description": "",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[testid-05]-user-should-not-be-allowed-to-enter-same-city-in-departure--destination;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20691756900,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User has launched flight status page",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_has_launched_flight_status_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 975550000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User enters Cologne-Bonn in Departure field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cologne-Bonn",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_departure_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4750566400,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User enters Cologne-Bonn in Destination field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cologne-Bonn",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefinitions.ShowFlightStatusStepDef.user_enters_in_destination_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Failes: User was allowed to select same value in departure and destination\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat stepDefinitions.ShowFlightStatusStepDef.User_is_not_allowed_to_select_same_valure_in_departure_and_destination(ShowFlightStatusStepDef.java:119)\r\n\tat ✽.User is not allowed to select same value in departure and destination(file:///C:/Users/Vikas/eclipse-workspace/EWD_AT_TestProject/src/test/resources/Features/ShowFlightStatus.feature:59)\r\n",
+              "duration": 3001800,
+              "status": "failed"
+            },
+            "line": 59,
+            "name": "User is not allowed to select same value in departure and destination",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.User_is_not_allowed_to_select_same_valure_in_departure_and_destination()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "closes browser",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.closes_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P2"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-02T16:03:05.821Z",
+        "line": 67,
+        "name": "[Cleanup] Close Browser if open",
+        "description": "",
+        "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date;[cleanup]-close-browser-if-open",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the test is over",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.given_the_test_is_over()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8032905600,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "quit browser",
+            "match": {
+              "location": "stepDefinitions.ShowFlightStatusStepDef.quit_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@P2"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@cleanup"
           }
         ]
       }
     ],
-    "name": "Our website users should be able search flight to book",
+    "name": "Our website users should be able get the flights status of a given flight route by a given date",
     "description": "",
-    "id": "our-website-users-should-be-able-search-flight-to-book",
+    "id": "our-website-users-should-be-able-get-the-flights-status-of-a-given-flight-route-by-a-given-date",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/SearchAndBookFlight.feature",
+    "uri": "file:src/test/resources/Features/ShowFlightStatus.feature",
     "tags": []
   }
 ]
