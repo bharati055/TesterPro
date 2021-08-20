@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>EWD_AT_TestProject</groupId>
-	<artifactId>EWD_AT_TestProject</artifactId>
+	<groupId>TesterPro</groupId>
+	<artifactId>TesterPro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
